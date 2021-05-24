@@ -1,9 +1,6 @@
 package ej2.modelo;
 
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.io.Writer;
+import java.io.*;
 
 public class Report implements Exportador {
     private final String reporte;
@@ -13,10 +10,8 @@ public class Report implements Exportador {
     }
 
     public void export(File file) {
-        try {
-            Writer writer = new FileWriter(file, true);
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter(file))){
             writer.write(reporte);
-            writer.close();
         } catch (IOException e) {
             throw new RuntimeException("No pudo guardarse el reporte", e);
         }
