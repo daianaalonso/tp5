@@ -9,6 +9,6 @@ import java.io.File;
 public class Main {
     public static void main(String[] args) {
         Exportador exportador = new ReportNoNulo(new Report("Reporte de prueba\n"));
-        exportador.export(new File("C:\\Users\\Daiana\\Documentos\\Objetos2\\reporte.txt"));
+        exportador.export(new File("reporte.txt"));
     }
 }
