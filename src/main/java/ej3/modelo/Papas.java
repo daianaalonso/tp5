@@ -5,7 +5,7 @@ public class Papas implements Mezclar {
     private final String contenido;
     private final double precio;
 
-    public Papas(Mezclar mezclar, String contenido, double precio) {
+    public Papas(String contenido, double precio, Mezclar mezclar) {
         this.mezclar = mezclar;
         this.contenido = contenido;
         this.precio = precio;

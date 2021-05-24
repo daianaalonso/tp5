@@ -5,7 +5,7 @@ public class Carne implements Mezclar {
     private final String contenido;
     private final double precio;
 
-    public Carne(Mezclar mezclar, String contenido, double precio) {
+    public Carne(String contenido, double precio, Mezclar mezclar) {
         this.mezclar = mezclar;
         this.contenido = contenido;
         this.precio = precio;
