@@ -5,14 +5,14 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.Writer;
 
-public class Report {
+public class Report implements Exportador{
     private final String reporte;
 
     public Report(String reporte) {
         this.reporte = reporte;
     }
 
-    void export(File file) {
+    public void export(File file) {
         if (file == null) {
             throw new IllegalArgumentException(
                     "File es NULL; no puedo exportar..."

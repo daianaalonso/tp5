@@ -4,8 +4,7 @@ import java.io.File;
 
 public class ReportConVerificacion extends DecoradorReport {
 
-    public ReportConVerificacion(String reporte) {
-        super(reporte);
+    public ReportConVerificacion() {
     }
 
     @Override
