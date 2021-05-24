@@ -3,8 +3,10 @@ package ej2;
 import java.io.File;
 
 public class ReportConVerificacion extends DecoradorReport {
+    private final Report report;
 
-    public ReportConVerificacion() {
+    public ReportConVerificacion(Report report) {
+        this.report = report;
     }
 
     @Override
