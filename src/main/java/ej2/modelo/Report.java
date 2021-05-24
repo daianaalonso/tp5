@@ -1,4 +1,4 @@
-package ej2;
+package ej2.modelo;
 
 import java.io.File;
 import java.io.FileWriter;

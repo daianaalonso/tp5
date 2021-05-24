@@ -1,12 +1,13 @@
-package ej2;
+package ej2.modelo;
 
 import java.io.File;
 
-public class ReportConVerificacion extends DecoradorReport {
-    private final Report report;
+public class ReportConVerificacion implements Exportador {
 
-    public ReportConVerificacion(Report report) {
-        this.report = report;
+    private final Exportador exportador;
+
+    public ReportConVerificacion(Exportador exportador) {
+        this.exportador = exportador;
     }
 
     @Override
