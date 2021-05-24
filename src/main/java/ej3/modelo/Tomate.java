@@ -7,7 +7,7 @@ public class Tomate implements Mezclar {
 
     public Tomate(Mezclar mezclar, String contenido, double precio) {
         this.mezclar = mezclar;
-        this.contenido= contenido;
+        this.contenido = contenido;
         this.precio = precio;
     }
 
@@ -18,6 +18,6 @@ public class Tomate implements Mezclar {
 
     @Override
     public String obtenerContenido() {
-        return mezclar.obtenerContenido() + contenido;
+        return mezclar.obtenerContenido() + " + " + contenido;
     }
 }

@@ -5,9 +5,9 @@ public class Carne implements Mezclar {
     private final String contenido;
     private final double precio;
 
-    public Carne (Mezclar mezclar, String contenido, double precio) {
+    public Carne(Mezclar mezclar, String contenido, double precio) {
         this.mezclar = mezclar;
-        this.contenido= contenido;
+        this.contenido = contenido;
         this.precio = precio;
     }
 
@@ -18,6 +18,6 @@ public class Carne implements Mezclar {
 
     @Override
     public String obtenerContenido() {
-        return mezclar.obtenerContenido() + contenido;
+        return mezclar.obtenerContenido() + " + " + contenido;
     }
 }
