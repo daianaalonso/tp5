@@ -1,9 +1,9 @@
 package ej3.modelo;
 
 public class Combo implements Mezclar {
-    private String nombre;
-    private String contenido;
-    private double precio;
+    private final String nombre;
+    private final String contenido;
+    private final double precio;
 
     public Combo(String nombre, String contenido, double precio) {
         this.nombre = nombre;
@@ -18,6 +18,6 @@ public class Combo implements Mezclar {
 
     @Override
     public String obtenerContenido() {
-        return nombre +": "+ contenido;
+        return nombre + ": " + contenido;
     }
 }
