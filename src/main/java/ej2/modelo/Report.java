@@ -13,16 +13,12 @@ public class Report implements Exportador {
     }
 
     public void export(File file) {
-        if (file == null) {
-            throw new IllegalArgumentException(
-                    "File es NULL; no puedo exportar..."
-            );
-        }
         try {
             Writer writer = new FileWriter(file, true);
             writer.write(reporte);
+            writer.close();
         } catch (IOException e) {
-            e.printStackTrace();
+            throw new RuntimeException("No pudo guardarse el reporte", e);
         }
     }
 }

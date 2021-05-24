@@ -2,11 +2,10 @@ package ej2.modelo;
 
 import java.io.File;
 
-public class ReportConVerificacion implements Exportador {
-
+public class ReportNoNulo implements Exportador {
     private final Exportador exportador;
 
-    public ReportConVerificacion(Exportador exportador) {
+    public ReportNoNulo(Exportador exportador) {
         this.exportador = exportador;
     }
 
@@ -17,10 +16,6 @@ public class ReportConVerificacion implements Exportador {
                     "File es NULL; no puedo exportar..."
             );
         }
-        if (file.exists()) {
-            throw new IllegalArgumentException(
-                    "El archivo ya existe..."
-            );
-        }
+        this.exportador.export(file);
     }
 }
