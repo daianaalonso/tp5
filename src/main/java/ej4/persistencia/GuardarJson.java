@@ -6,10 +6,10 @@ import ej4.modelo.Publicacion;
 import java.util.ArrayList;
 import java.util.List;
 
-public class GuardarMemoria implements Guardar {
+public class GuardarJson implements Guardar {
     private final List<Publicacion> publicaciones;
 
-    public GuardarMemoria() {
+    public GuardarJson() {
         publicaciones = new ArrayList<>();
     }
 
