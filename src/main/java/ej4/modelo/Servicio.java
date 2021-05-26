@@ -4,5 +4,5 @@ import java.util.List;
 
 public interface Servicio {
 
-    List<Publicacion> parsear(String json);
+    List<Publicacion> jsonAObjeto(String json);
 }

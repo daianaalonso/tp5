@@ -10,7 +10,7 @@ import java.util.List;
 
 public class GsonServicio implements Servicio {
 
-    public List<Publicacion> parsear(String json) {
+    public List<Publicacion> jsonAObjeto(String json) {
         Gson gson = new Gson();
         Type listaPublicaciones = new TypeToken<List<Publicacion>>() {}.getType();
         return gson.fromJson(json, listaPublicaciones);
